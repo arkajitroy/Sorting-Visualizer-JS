@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sorting Visulizer</title>
+</head>
+<body>
+    <div>
+        <section class="title-page">
+            <div>SORTING VISULIZER</div>
+        </section>
+        
+        <section class="control-panel">
+
+            <div class="section-1">
+                <div>
+                    <p>Speed of Algorithm</p>
+                    <input id="a_speed" type="range" min=20 max=300 stepDown=10 value=60>
+                </div>
+    
+                <div>
+                    <p>Size of the array</p>
+                    <input id="a_size" type="range" min=5 max=100 step=1 value=60>
+                </div>
+            </div>
+            
+            <button class="generate-array" id="generate-array">Generate Array</button>
+            <div class="algorithm">
+                <button class="btn bubble" id="bubble">Bubble</button>
+                <button class="btn selection" id="selection">Selection</button>
+                <button class="btn insertion" id="insertion">Insertion</button>
+                <button class="btn merge" id="merge">Merge</button>
+                <button class="btn quick" id="quick">Quick</button>
+                <!-- <button class="btn heap" id="heap">Heap</button> -->
+            </div>
+        </section>
+
+        <section class="visualization container">
+            <div class="data-group" id="data-group">
+                
+                <!-- <div class="data-bar"></div> -->
+                
+            </div>
+        </section>
+    </div>
+</body>
+<script src="./main.js"></script>
+<script src="./visual.js"></script>
+<script src="./sorting_algo/bubble_sort.js"></script>
+<script src="./sorting_algo/selection_sort.js"></script>
+<script src="./sorting_algo/insertion_sort.js"></script>
+<script src="./sorting_algo/merge_sort.js"></script>
+<script src="./sorting_algo/quick_sort.js"></script>
+</html>

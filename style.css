@@ -1,0 +1,143 @@
+
+/* FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&family=Send+Flowers&display=swap');
+
+/* FONT FAMILY-- 
+font-family: 'Oswald', sans-serif;
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(56, 46, 67);
+    color: azure;
+}
+
+.container{
+    padding: 1rem;
+    width: 70%;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.5rem;
+    font-size: 35px;
+    background-color: blueviolet;
+}
+
+.control-panel{
+    box-shadow: rgba(0, 0, 0, 0.168) 0px 20px 25px -5px,
+                 rgba(0, 0, 0, 0.13) 0px 10px 10px -5px;
+    background-color: rgb(90, 24, 152);
+    border-radius: 0 0 30px 30px;
+    height: 12rem;
+}
+
+/* ALL THE SELECTION BUTTONS AND INPUTS */
+
+.section-1 #a_speed{
+    cursor: pointer;
+    width: 8rem;
+}
+
+.section-1 #a_size{
+    cursor: pointer;
+    width: 7rem;
+}
+
+
+
+.generate-array{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    height: 3rem;
+    width: 10rem;
+    background-color: rgb(66, 51, 83);
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    border: 0px;
+    transition: 0.8s;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.032) 0px 3px 6px,
+    rgba(0, 0, 0, 0.059) 0px 3px 6px;
+}
+
+.generate-array:hover{
+    background-color: rgb(37, 30, 45);
+}
+
+.section-1{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 2rem;
+}
+
+/*ALGORITHM BUTTON*/
+
+.algorithm{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 1.2rem;
+}
+
+.btn{
+    font-size: 1rem;
+    height: 2.2rem;
+    width: 7rem;
+    border-radius: 5px;
+    border: 0px;
+    background-color: rgba(137, 43, 226, 0.474) ;
+    color: rgb(0, 0, 0);
+    transition: 0.7s;
+    box-shadow: rgba(0, 0, 0, 0.032) 0px 3px 6px,
+                     rgba(0, 0, 0, 0.059) 0px 3px 6px;
+}
+
+.btn:hover{
+    background-color: rgb(140, 17, 255);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* data groups */
+
+.visualization{
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+    height: 30rem;
+    /* border: 1px solid white; */
+}
+
+.data-group{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    transition: 2s all ease;
+}
+
+.data-bar{
+    width: 10px;
+    background-color: rgb(0, 119, 255);
+    border: 1px solid rgb(56, 46, 67);
+}
